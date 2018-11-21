@@ -2,6 +2,9 @@
 Scala Play app using Circe and play-json
 
 ## Benchmarks
+
+* play-json
+
 ```
 ab -n 100000 -c 10 http://localhost:9000/
 This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
@@ -33,6 +36,8 @@ Processing:     0    1   0.3      1      12
 Waiting:        0    1   0.3      1      11
 Total:          0    1   0.3      1      12
 ```
+
+* circe
 
 ```
 ab -n 100000 -c 10 http://localhost:9000/c
